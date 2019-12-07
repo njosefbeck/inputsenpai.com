@@ -26,21 +26,26 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <main style={{ marginTop: '40px' }}>{children}</main>
+      <footer>
+
+        <a href="https://join.inputsenpai.com" style={{ color: "#FFF" }}>
+        <div style={{
+          fontSize: '16px',
+          color: '#FFF',
+          fontWeight: 'bold',
+          textAlign: 'center',
+          backgroundColor: '#03a9f4',
+          borderRadius: '4px',
+          padding: '20px',
+          marginBottom: '40px',
+        }}>
+            Join our newsletter to be notified when we update our resources.
+          </div>
+        </a>
+
+        <p>© {new Date().getFullYear()}, inputsenpai.com. Created by <a href="https://njosefbeck.com" target="_blank" rel="noopener noreferrer">njosefbeck</a>.</p>
+      </footer>
     </>
   )
 }
