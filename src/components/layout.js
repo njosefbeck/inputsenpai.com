@@ -30,21 +30,23 @@ const Layout = ({ children }) => {
       <footer>
 
         <a href="https://join.inputsenpai.com" style={{ color: "#FFF" }}>
-        <div style={{
-          fontSize: '16px',
-          color: '#FFF',
-          fontWeight: 'bold',
-          textAlign: 'center',
-          backgroundColor: '#03a9f4',
-          borderRadius: '4px',
-          padding: '20px',
-          marginBottom: '40px',
-        }}>
-            Join our newsletter to be notified when we update our resources.
+          <div style={{
+            fontSize: '16px',
+            color: '#FFF',
+            fontWeight: 'bold',
+            textAlign: 'center',
+            backgroundColor: '#03a9f4',
+            borderRadius: '4px',
+            padding: '20px',
+            marginBottom: '40px',
+          }}>
+            Join our newsletter to be notified when we update our resources
           </div>
         </a>
 
-        <p>© {new Date().getFullYear()}, inputsenpai.com. Created by <a href="https://njosefbeck.com" target="_blank" rel="noopener noreferrer">njosefbeck</a>.</p>
+        <p>© {new Date().getFullYear()}, inputsenpai.com. Created by <a href="https://njosefbeck.com" target="_blank" rel="noopener noreferrer">njosefbeck</a></p>
+
+        <p>Follow us on <a href="https://twitter.com/inputsenpai">Twitter</a></p>
       </footer>
     </>
   )
